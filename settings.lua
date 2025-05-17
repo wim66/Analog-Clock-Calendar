@@ -1,6 +1,7 @@
 -- settings.lua
+-- analog-clock-calendar
 -- by @wim66
--- v5 May 6, 2025
+-- v1 May 17, 2025
 
 -- Set the path to the scripts folder
 package.path = "./scripts/?.lua"

@@ -1,6 +1,7 @@
--- background.lua
+-- widget.lua
+-- analog-clock-calendar
 -- by @wim66
--- May 6, 2025
+-- v1 May 17, 2025
 
 -- === Required Cairo Modules ===
 require 'cairo'

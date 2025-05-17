@@ -1,3 +1,8 @@
+clock.lua
+-- analog-clock-calendar
+-- by @wim66
+-- v1 May 17, 2025
+
 -- analog_clock.lua voor Conky: Analoge klok van 180px hoog, gecentreerd, met uur-nummers zonder decimalen en instelbare hexadecimale kleuren
 -- Opslaan als ~/.conky/analog_clock.lua of een andere locatie en aanroepen in .conkyrc
 
