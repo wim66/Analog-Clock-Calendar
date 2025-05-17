@@ -34,6 +34,8 @@ function conky_draw_calendar()
     local surface = cairo_xlib_surface_create(conky_window.display, conky_window.drawable, conky_window.visual, w, h)
     local cr = cairo_create(surface)
 
+                                                -- === SETTINGS === ---
+-- ===================================================================================================================================
     -- Settings (adjust to your preference)
     local font_name = "Ubuntu Mono"
     local font_size = 16
@@ -42,7 +44,7 @@ function conky_draw_calendar()
     local start_y = 225
     local show_weeknums = true
     local week_starts = "monday" -- monday or sunday
-    local language = "dutch" -- english, dutch, german, spanish, french
+    local language = "english" -- english, dutch, german, spanish, french
 
     -- Color settings
     local colour_month = "#44AAFF"
@@ -52,7 +54,7 @@ function conky_draw_calendar()
     local colour_today = "#00FF00"
     local colour_outside = "#808080"
     local colour_weeknums = "#44AAFF"
-
+-- ====================================================================================================================================
     draw_calendar(cr, start_x, start_y, font_name, font_size, day_spacing, show_weeknums, week_starts, language,
         colour_month, colour_weekdays, colour_weekday_today, colour_days, colour_today, colour_outside, colour_weeknums)
 
