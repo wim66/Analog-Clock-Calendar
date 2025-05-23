@@ -26,7 +26,7 @@ M.boxes_settings = {
         -- border
         {
         x=2, y=2, w=200, h=375,
-        colour={{0,0xAAAAAA,1}, {1,0x333333,1}}, linear_gradient={0,0,0,},
+        colour={{0,0xAAAAAA,1}, {1,0x333333,1}}, linear_gradient={0,0,0,375},
         --the missing corners are repeated
         corners={ {"circle",20}, {"circle",20}, {"circle",20}, {"circle",20}},
         border = 4
