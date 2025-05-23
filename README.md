@@ -1,6 +1,6 @@
 # Analog Clock & Calendar Conky
 
-This repository contains a Conky configuration script to display an analog clock and customizable calendar widget on your desktop.
+This repository contains two Conky configurations to display an analog clock and customizable calendar widget on your desktop.
 
 ![Calendar-Conky](preview.png)
 
