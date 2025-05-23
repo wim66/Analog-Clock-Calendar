@@ -32,8 +32,8 @@ local colours = require "colour_schemes"
 -- my_border_colour = colours.border_blue
 
 -- === Box & Border Colour ===
-local my_box_colour = colours.box_blue
-local my_border_colour = colours.border_blue
+local my_box_colour = colours.box_gray
+local my_border_colour = colours.border_gray
 
 -- === Layout ===
 
