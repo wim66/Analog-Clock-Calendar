@@ -15,6 +15,7 @@ local colours = require "colour_schemes"
 -- orange
 -- green
 -- purple
+
 -- === Box & Border Colour ===
 local my_box_colour = colours.box_gray
 local my_border_colour = colours.border_gray
@@ -24,8 +25,8 @@ local my_border_colour = colours.border_gray
 local M = {}
 M.boxes_settings = {
     {
-        x=2, y=2, w=200, h=375,
-      	colour= my_box_colour, linear_gradient= {0,0,0,375},
+        x=2, y=2, w=400, h=200,
+      	colour= my_box_colour, linear_gradient= {0,0,0,200},
         corners={ {"circle",20}, {"circle",20}, {"circle",20}, {"circle",20}},
         },
 
@@ -42,8 +43,8 @@ M.boxes_settings = {
         },
         -- border
         {
-        x=2, y=2, w=200, h=375,
-        colour = my_border_colour, linear_gradient={0,0,0,375},
+        x=2, y=2, w=400, h=200,
+        colour = my_border_colour, linear_gradient={0,0,0,200},
         --the missing corners are repeated
         corners={ {"circle",20}, {"circle",20}, {"circle",20}, {"circle",20}},
         border = 4

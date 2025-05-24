@@ -38,6 +38,8 @@ Additionally, ensure Lua and Cairo libraries are available on your system.
 
 ### Customization
 
+#### Calendar Appearance
+
 The calendar appearance can be customized by editing the `calendar.lua` script. Key settings include:
 
 - **Font and Size**:
@@ -61,7 +63,7 @@ The calendar appearance can be customized by editing the `calendar.lua` script. 
   local colour_outside = "#555555"  -- Days outside the current month
   local colour_weeknums = "#44AAFF" -- Week numbers
   ```
-- **Languages**:
+- **Language**:
   ```lua
   local week_starts = "monday" -- monday or sunday
   local language = "english" -- english, dutch
@@ -74,6 +76,35 @@ The calendar appearance can be customized by editing the `calendar.lua` script. 
   ```
 
 For a detailed explanation of each setting, refer to the comments in the `calendar.lua` script.
+
+---
+
+### How to change colors in `layout.lua` for Design-2
+
+To change the box and border colors in Design-2:
+
+1. **Open** the file `Design-2/scripts/layout.lua` in a text editor.
+
+2. **Available color schemes** can be found in `Design-2/scripts/colour_schemes.lua`. Some predefined options include:
+   - `gray`
+   - `blue`
+   - `red`
+   - `orange`
+   - `green`
+   - `purple`
+   - You can also add your own color scheme to `colour_schemes.lua` and use it in `layout.lua`.
+
+3. **Select your desired colors** by editing the following lines in `layout.lua` (located near the top of the script):
+
+   ```lua
+   local my_box_colour = colours.box_gray
+   local my_border_colour = colours.border_gray
+   ```
+
+
+4. **Save the file** and restart Conky to see your changes.
+
+---
 
 ## Contributing
 
