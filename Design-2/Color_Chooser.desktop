@@ -1,0 +1,26 @@
+[Desktop Entry]
+Name=Color Chooser
+Name[nl]=Kleurkiezer
+Name[en]=Color Chooser
+Name[es]=Selector de Color
+Name[fr]=Sélecteur de Couleur
+Name[it]=Selettore di Colore
+Name[de]=Farbwähler
+Name[ru]=Выбор цвета
+Name[pt]=Seletor de Cor
+
+Comment=Choose a color for layout.lua
+Comment[nl]=Kies een kleur voor layout.lua
+Comment[en]=Choose a color for layout.lua
+Comment[es]=Elige un color para layout.lua
+Comment[fr]=Choisissez une couleur pour layout.lua
+Comment[it]=Scegli un colore per layout.lua
+Comment[de]=Wähle eine Farbe für layout.lua
+Comment[ru]=Выберите цвет для layout.lua
+Comment[pt]=Escolha uma cor para layout.lua
+
+Exec=sh -c 'cd "$(dirname %k)" && ./scripts/change-color.sh'
+Icon=adjust-colors
+Terminal=false
+Type=Application
+Categories=Utility;

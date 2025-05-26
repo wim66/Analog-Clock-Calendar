@@ -1,8 +1,8 @@
 # Analog Clock & Calendar Conky
 
-This repository contains two Conky configurations to display an analog clock and customizable calendar widget on your desktop.
+This repository contains three Conky configurations to display an analog clock and customizable calendar widget on your desktop.
 
-![Calendar-Conky](preview.png)
+![Calendar-Conky](preview.png)![Calendar-Conky](Design-1/preview.png)
 
 ## Features
 
@@ -31,10 +31,10 @@ Additionally, ensure Lua and Cairo libraries are available on your system.
 ### Installation
 
 - Clone this repository:
-   ```bash
-   git clone https://github.com/wim66/Analog-Clock-Calendar.git
-   cd Calendar-Conky
-   ```
+  ```bash
+  git clone https://github.com/wim66/Analog-Clock-Calendar.git
+  cd Calendar-Conky
+  ```
 
 ### Customization
 
@@ -43,12 +43,14 @@ Additionally, ensure Lua and Cairo libraries are available on your system.
 The calendar appearance can be customized by editing the `calendar.lua` script. Key settings include:
 
 - **Font and Size**:
+
   ```lua
   local font_name = "Ubuntu Mono"
   local font_size = 16
   ```
 
 - **Positioning**:
+
   ```lua
   local start_x = 40
   local start_y = 40
@@ -63,11 +65,11 @@ The calendar appearance can be customized by editing the `calendar.lua` script. 
   local colour_outside = "#555555"  -- Days outside the current month
   local colour_weeknums = "#44AAFF" -- Week numbers
   ```
-- **Language**:
+- **Language**: You can add more languages in the translations section as needed
+
   ```lua
   local week_starts = "monday" -- monday or sunday
-  local language = "english" -- english, dutch
-  You can add more languages in the translations section as needed
+  local language = "english" -- english, dutch, german, spanish, french
   ```
 
 - **Spacing**:
@@ -79,11 +81,11 @@ For a detailed explanation of each setting, refer to the comments in the `calend
 
 ---
 
-### How to change colors in `layout.lua` for Design-2
+### How to change colors for Design-2 widgets
 
 To change the box and border colors in Design-2:
 
-1. **Open** the file `Design-2/scripts/layout.lua` in a text editor.
+1. **Start** Color_Chooser.desktop.
 
 2. **Available color schemes** can be found in `Design-2/scripts/colour_schemes.lua`. Some predefined options include:
    - `gray`
@@ -92,17 +94,8 @@ To change the box and border colors in Design-2:
    - `orange`
    - `green`
    - `purple`
+   - `slot (slot theme color)`
    - You can also add your own color scheme to `colour_schemes.lua` and use it in `layout.lua`.
-
-3. **Select your desired colors** by editing the following lines in `layout.lua` (located near the top of the script):
-
-   ```lua
-   local my_box_colour = colours.box_gray
-   local my_border_colour = colours.border_gray
-   ```
-
-
-4. **Save the file** and restart Conky to see your changes.
 
 ---
 
